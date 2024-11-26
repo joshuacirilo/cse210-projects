@@ -4,12 +4,12 @@ using Microsoft.VisualBasic;
 class Scriptures
 {
 
-    private Reference _reference;
+    private string _reference;
     private List<Word> Words;
 
-    public Scriptures(Reference Reference, string text)
+    public Scriptures(string getReference, string text)
     {
-        _reference = Reference;
+        _reference = getReference;
         Words = text.Split(' ').Select(word => new Word(word)).ToList();
     }
 
