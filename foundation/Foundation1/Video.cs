@@ -14,7 +14,7 @@ class Video
 
     public string GetInformationOfVideo()
     {
-        string completeInformation = ($"Title: {_title}, Author: {_author}, Length in seconds : {_length}");
+        string completeInformation = ($"Title: {_title}, Author: {_author}, Length in seconds : {_length}s");
         return completeInformation;
     }
 
