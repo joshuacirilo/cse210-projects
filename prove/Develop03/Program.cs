@@ -1,7 +1,9 @@
 using System;
+using System.Threading;
 
 class Program
 {
+
     static void Main(string[] args)
     {
         Console.WriteLine("Hello Develop03 World!");
@@ -30,6 +32,14 @@ class Program
         Console.Clear();
         Console.WriteLine(scripture.GetDisplayText());
         Console.WriteLine("All the words have been hidden");
+        Thread.Sleep(2000);
+        Console.Clear();
+        Scriptures sc1 = new Scriptures(getReference,"Trust in the Lord with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.");
+        string fullScripture = sc1.FullText();
+        Console.WriteLine(fullScripture);
+        Console.Write("Thanks for usign this program :)");
+
+
 
     }
 }
